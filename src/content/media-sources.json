@@ -4,7 +4,13 @@
     "deep-sea-journey": {
       "poster": "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_215459_ef9c23e2-bf6e-4dc5-9300-380b83da9206.png",
       "hero": {
-        "clips": [],
+        "clips": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_220951_da37e705-9457-4033-94b9-8ea305f6b5bb.mp4",
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_220925_28972d10-3117-459d-80d2-98d543ab7b09.mp4",
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_221343_abdf4ccf-4e38-47dd-b41a-81336de06e3e.mp4",
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_220525_8cab77cf-a0b1-4586-adbc-633464908808.mp4",
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_220951_f2afec6e-d7bd-4b21-aca9-1ec000947e18.mp4"
+        ],
         "frames": 120
       },
       "stills": {
@@ -30,7 +36,9 @@
     "luxury-product": {
       "poster": "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_215459_aef5ca25-859a-4a07-8cc7-3f9605748e83.png",
       "hero": {
-        "clips": [],
+        "clips": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_221059_986e815e-2d76-4657-b4eb-5f3fa80f3d5a.mp4"
+        ],
         "frames": 72
       },
       "stills": {
