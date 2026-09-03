@@ -125,13 +125,13 @@
       "folder": "07-saas",
       "hero": {
         "id": "assemble",
-        "frames": 36,
+        "frames": 72,
         "scrollHeight": 300,
         "focal": {
           "x": 0.5,
           "y": 0.5
         },
-        "status": "placeholder"
+        "status": "generated"
       },
       "stills": [
         "particles",

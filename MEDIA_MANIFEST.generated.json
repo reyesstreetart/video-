@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-09-03T22:26:14.342Z",
+  "generatedAt": "2026-09-03T22:28:47.071Z",
   "version": "v2",
   "reports": [
     {
-      "slug": "luxury-product",
+      "slug": "saas",
       "version": "v2",
       "frames": 72,
-      "hero": 1430382,
-      "heroMobile": 1617448,
-      "preview": 341014,
-      "heroMp4": 643206,
+      "hero": 2755508,
+      "heroMobile": 1787652,
+      "preview": 747879,
+      "heroMp4": 1411150,
       "stills": [
-        "orbit",
-        "macro",
-        "exploded"
+        "particles",
+        "signal",
+        "calm"
       ]
     }
   ]
