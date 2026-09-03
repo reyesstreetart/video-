@@ -1,0 +1,41 @@
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  padding: calc(var(--header-height) + 1.5rem) var(--gutter) max(2rem, env(safe-area-inset-bottom));
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 0 var(--gap);
+  align-content: end;
+}
+
+.overlay > * {
+  pointer-events: auto;
+}
+
+.item {
+  opacity: 0;
+  will-change: opacity, transform;
+  visibility: hidden;
+}
+
+html:not([data-js]) .item,
+.static {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+html[data-motion="static"] .overlay,
+html:not([data-js]) .overlay {
+  position: relative;
+  min-height: 100svh;
+  align-content: end;
+  background: linear-gradient(180deg, rgba(3, 8, 23, 0.15), rgba(3, 8, 23, 0.85));
+}

@@ -1,0 +1,30 @@
+.toggle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.label {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.button {
+  background: transparent;
+  border: 1px solid var(--color-line);
+  border-radius: 999px;
+  padding: 0.5rem 0.9rem;
+  min-height: 44px;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--color-ivory-70);
+}
+
+.button:hover {
+  border-color: var(--color-gold);
+  color: var(--color-ivory);
+}

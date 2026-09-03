@@ -1,0 +1,82 @@
+.chapter {
+  position: relative;
+  height: var(--chapter-height, 320svh);
+  min-height: 100svh;
+  contain: layout style;
+  background: var(--scene-bg, var(--color-night));
+}
+
+html[data-motion="static"] .chapter,
+html:not([data-js]) .chapter {
+  height: auto;
+  min-height: 100svh;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+@supports (height: 100dvh) {
+  .sticky {
+    height: 100dvh;
+  }
+}
+
+html[data-motion="static"] .sticky,
+html:not([data-js]) .sticky {
+  position: relative;
+  height: auto;
+  min-height: 100svh;
+}
+
+.skip {
+  position: absolute;
+  top: calc(var(--header-height) + 0.75rem);
+  right: 1.25rem;
+  z-index: 40;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-ivory);
+  background: rgba(3, 8, 23, 0.55);
+  border: 1px solid rgba(244, 240, 232, 0.18);
+  border-radius: 999px;
+  padding: 0.6rem 0.95rem;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  backdrop-filter: none;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  text-decoration: none;
+}
+
+.skip:focus-visible,
+.chapter:hover .skip {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+@media (hover: none) {
+  .skip {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
+}
+
+html[data-motion="static"] .skip,
+html:not([data-js]) .skip {
+  display: none;
+}
+
+.end {
+  scroll-margin-top: var(--header-height);
+}

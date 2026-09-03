@@ -1,0 +1,5 @@
+.intro {
+  position: relative;
+  overflow: hidden;
+  padding: calc(var(--header-height) + clamp(4rem, 10vw, 8rem)) 0 clamp(3rem, 6vw, 5rem);
+}

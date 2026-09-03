@@ -1,0 +1,70 @@
+.expertise {
+  border-top: 1px solid var(--color-line);
+}
+
+.serviceList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+
+.service {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 1rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--color-line);
+  color: var(--color-ivory-70);
+}
+
+.service:last-child {
+  border-bottom: 1px solid var(--color-line);
+}
+
+.service h3 {
+  color: var(--color-ivory);
+  margin-bottom: 0.35rem;
+}
+
+.moreLink {
+  margin-top: 2rem;
+}
+
+.method {
+  border-top: 1px solid var(--color-line);
+}
+
+.steps {
+  list-style: none;
+  margin: 3rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--gap);
+}
+
+.step {
+  display: grid;
+  gap: 0.6rem;
+  align-content: start;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-line-gold);
+  color: var(--color-ivory-70);
+}
+
+.step h3 {
+  color: var(--color-ivory);
+}
+
+@media (max-width: 1023px) {
+  .steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 599px) {
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}

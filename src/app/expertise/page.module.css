@@ -1,0 +1,103 @@
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--gap);
+  padding: clamp(2rem, 4vw, 3.5rem) 0;
+  border-top: 1px solid var(--color-line);
+}
+
+.item:last-child {
+  border-bottom: 1px solid var(--color-line);
+}
+
+.itemHead {
+  grid-column: 1 / span 6;
+  display: grid;
+  gap: 0.75rem;
+  align-content: start;
+}
+
+.details {
+  grid-column: 8 / span 5;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+  color: var(--color-ivory-70);
+  align-self: end;
+}
+
+.details li {
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.details li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 0.5rem;
+  height: 1px;
+  background: var(--color-gold);
+}
+
+.demoGrid {
+  list-style: none;
+  margin: 2.5rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--gap);
+}
+
+.demo a {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--color-line-gold);
+  text-decoration: none;
+  min-height: 100%;
+  color: var(--color-ivory-70);
+}
+
+.demo a:hover .demoSector {
+  color: var(--scene-accent);
+}
+
+.demoSector {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--color-ivory);
+}
+
+.demoInteraction {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1023px) {
+  .demoGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 899px) {
+  .itemHead,
+  .details {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 599px) {
+  .demoGrid {
+    grid-template-columns: 1fr;
+  }
+}

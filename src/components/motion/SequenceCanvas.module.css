@@ -1,0 +1,25 @@
+.wrap {
+  position: absolute;
+  inset: 0;
+  background: var(--color-night);
+  overflow: hidden;
+}
+
+.poster,
+.canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.canvas {
+  display: block;
+}

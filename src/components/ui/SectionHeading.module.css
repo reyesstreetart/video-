@@ -1,0 +1,11 @@
+.heading {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 60rem;
+}
+
+.center {
+  text-align: center;
+  margin-inline: auto;
+  justify-items: center;
+}

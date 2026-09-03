@@ -1,0 +1,47 @@
+{
+  "version": "v1",
+  "desktop": { "width": 1280, "height": 720 },
+  "mobile": { "width": 540, "height": 960 },
+  "experiences": {
+    "deep-sea-journey": {
+      "folder": "01-deep-sea",
+      "hero": { "id": "descent", "frames": 72, "scrollHeight": 420, "focal": { "x": 0.5, "y": 0.5 }, "status": "placeholder" },
+      "stills": ["surface", "sunlit", "twilight", "midnight", "floor"]
+    },
+    "personal-portfolio": {
+      "folder": "02-personal-portfolio",
+      "hero": { "id": "orbit", "frames": 48, "scrollHeight": 320, "focal": { "x": 0.5, "y": 0.45 }, "status": "placeholder" },
+      "stills": ["orbit", "builder", "closer"]
+    },
+    "luxury-product": {
+      "folder": "03-luxury-product",
+      "hero": { "id": "orbit", "frames": 48, "scrollHeight": 340, "focal": { "x": 0.5, "y": 0.5 }, "status": "placeholder" },
+      "stills": ["orbit", "macro", "exploded"]
+    },
+    "restaurant": {
+      "folder": "04-restaurant",
+      "hero": { "id": "fire", "frames": 36, "scrollHeight": 280, "focal": { "x": 0.5, "y": 0.55 }, "status": "placeholder" },
+      "stills": ["fire", "room", "craft"]
+    },
+    "real-estate": {
+      "folder": "05-real-estate",
+      "hero": { "id": "tour", "frames": 60, "scrollHeight": 400, "focal": { "x": 0.5, "y": 0.5 }, "status": "placeholder" },
+      "stills": ["approach", "arrival", "flow", "terrace"]
+    },
+    "automotive": {
+      "folder": "06-automotive",
+      "hero": { "id": "drive", "frames": 60, "scrollHeight": 400, "focal": { "x": 0.5, "y": 0.55 }, "status": "placeholder" },
+      "stills": ["reveal", "run", "canyon", "night"]
+    },
+    "saas": {
+      "folder": "07-saas",
+      "hero": { "id": "assemble", "frames": 36, "scrollHeight": 300, "focal": { "x": 0.5, "y": 0.5 }, "status": "placeholder" },
+      "stills": ["particles", "signal", "calm"]
+    },
+    "fitness": {
+      "folder": "08-fitness",
+      "hero": { "id": "chalk", "frames": 36, "scrollHeight": 300, "focal": { "x": 0.5, "y": 0.45 }, "status": "placeholder" },
+      "stills": ["chalk", "iron", "grind"]
+    }
+  }
+}

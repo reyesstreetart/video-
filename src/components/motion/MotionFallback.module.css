@@ -1,0 +1,35 @@
+.fallback {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: var(--color-night);
+}
+
+.fallback img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+html[data-motion="static"] .fallback,
+html:not([data-js]) .fallback {
+  position: absolute;
+}
+
+.animated img {
+  animation: slowZoom 18s ease-in-out infinite alternate;
+}
+
+@keyframes slowZoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.06);
+  }
+}
+
+html[data-motion="static"] .animated img {
+  animation: none;
+}

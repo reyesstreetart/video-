@@ -1,0 +1,43 @@
+.manifesto {
+  overflow: hidden;
+  border-top: 1px solid var(--color-line);
+}
+
+.head {
+  grid-column: 1 / span 7;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.words {
+  grid-column: 9 / span 4;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  align-content: end;
+  gap: 0.25rem;
+}
+
+.word {
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 4.4vw, 4rem);
+  line-height: 1.05;
+  color: var(--color-ivory);
+  border-bottom: 1px solid var(--color-line-gold);
+  padding-bottom: 0.4rem;
+}
+
+.word:last-child {
+  color: var(--color-gold);
+}
+
+@media (max-width: 899px) {
+  .head,
+  .words {
+    grid-column: 1 / -1;
+  }
+  .words {
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,99 @@
+.hero {
+  --scene-bg: #050505;
+}
+
+.h1 {
+  font-size: clamp(2.4rem, 7.5vw, 7.5rem);
+  line-height: 1;
+  color: var(--color-ivory);
+  text-shadow: 0 2px 40px rgba(0, 0, 0, 0.8);
+  white-space: nowrap;
+}
+
+.tracked {
+  display: inline-block;
+  letter-spacing: 0.42em;
+  will-change: letter-spacing, opacity;
+  opacity: 0.4;
+}
+
+html[data-motion="static"] .tracked,
+html:not([data-js]) .tracked {
+  letter-spacing: 0.02em;
+  opacity: 1;
+}
+
+.crafted {
+  overflow: hidden;
+  background: #050505;
+  border-top: 1px solid var(--color-line);
+}
+
+.explodedChapter {
+  --scene-bg: #060606;
+}
+
+.explodedStage {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(ellipse at 50% 45%, #15130f 0%, #060606 60%);
+}
+
+.exploded {
+  width: min(70vw, 520px);
+  height: auto;
+  max-height: 90svh;
+}
+
+.exploded g {
+  will-change: transform;
+  transition: none;
+}
+
+.calloutA {
+  left: 62%;
+  top: 22%;
+  grid-column: auto;
+}
+
+.calloutB {
+  left: 62%;
+  top: 42%;
+  grid-column: auto;
+}
+
+.calloutC {
+  left: 62%;
+  top: 60%;
+  grid-column: auto;
+}
+
+.calloutD {
+  left: 62%;
+  top: 76%;
+  grid-column: auto;
+}
+
+.list {
+  border-top: 1px solid var(--color-line);
+}
+
+@media (max-width: 899px) {
+  .h1 {
+    white-space: normal;
+    font-size: clamp(2rem, 11vw, 4rem);
+  }
+  .calloutA,
+  .calloutB,
+  .calloutC,
+  .calloutD {
+    left: auto;
+    top: auto;
+    grid-column: 1 / -1;
+  }
+  .exploded {
+    width: min(80vw, 380px);
+  }
+}

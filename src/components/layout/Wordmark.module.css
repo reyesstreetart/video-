@@ -1,0 +1,55 @@
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: var(--color-ivory);
+  min-height: 44px;
+}
+
+.mono {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--color-ivory);
+  display: inline-grid;
+  place-items: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 1px solid var(--color-line-gold);
+  border-radius: 50%;
+  position: relative;
+}
+
+.mono::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  border: 1px solid rgba(18, 59, 199, 0.5);
+}
+
+.monoLarge {
+  width: auto;
+  height: auto;
+  border: 0;
+  font-size: inherit;
+}
+
+.monoLarge::after {
+  display: none;
+}
+
+.text {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.thin {
+  font-weight: 400;
+  color: var(--color-mist);
+}

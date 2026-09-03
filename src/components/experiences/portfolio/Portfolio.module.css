@@ -1,0 +1,97 @@
+.hero {
+  --scene-bg: #04081a;
+}
+
+.overlay {
+  align-content: end;
+}
+
+.titleZone {
+  grid-column: 1 / span 10;
+  display: grid;
+  gap: 0.75rem;
+  align-self: end;
+}
+
+.h1 {
+  font-size: clamp(2.8rem, 9vw, 9rem);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: var(--color-ivory);
+  text-shadow: 0 2px 40px rgba(3, 8, 23, 0.8);
+}
+
+.name {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.name span {
+  display: inline-block;
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+.space {
+  width: 0.3em;
+}
+
+html[data-motion="static"] .name span,
+html:not([data-js]) .name span {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.finalOverlay {
+  grid-column: 1 / span 7;
+  display: grid;
+  gap: 0.75rem;
+  align-self: end;
+}
+
+.stats {
+  padding-block: 2rem;
+}
+
+.gallerySection {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.galleryBg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.galleryBg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.22;
+}
+
+.project figcaption {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.projectTitle {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--color-ivory);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.cta {
+  border-top: 1px solid var(--color-line);
+}
+
+@media (max-width: 899px) {
+  .titleZone,
+  .finalOverlay {
+    grid-column: 1 / -1;
+  }
+}

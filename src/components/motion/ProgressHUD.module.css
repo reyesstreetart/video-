@@ -1,0 +1,100 @@
+.hud {
+  position: absolute;
+  z-index: 3;
+  left: var(--gutter);
+  top: calc(var(--header-height) + 1.25rem);
+  display: grid;
+  gap: 0.35rem;
+  color: var(--color-ivory);
+  font-variant-numeric: tabular-nums;
+  max-width: min(60vw, 18rem);
+  pointer-events: none;
+}
+
+.right {
+  left: auto;
+  right: var(--gutter);
+  text-align: right;
+}
+
+.label {
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-mist);
+}
+
+.value {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 3.4vw, 2.75rem);
+  line-height: 1;
+  color: var(--scene-accent, var(--color-gold));
+}
+
+.track {
+  display: block;
+  height: 1px;
+  width: 8rem;
+  background: rgba(244, 240, 232, 0.2);
+  overflow: hidden;
+}
+
+.right .track {
+  margin-left: auto;
+}
+
+.bar {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: var(--scene-accent, var(--color-gold));
+  transform-origin: left center;
+  transform: scaleX(0);
+}
+
+.steps {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.2rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(152, 162, 183, 0.7);
+}
+
+.steps li[aria-current="step"] {
+  color: var(--color-ivory);
+}
+
+.steps li[aria-current="step"]::before {
+  content: "";
+  display: inline-block;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 50%;
+  background: var(--scene-accent, var(--color-gold));
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.static {
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  padding: 1.25rem var(--gutter) 0;
+}
+
+@media (max-width: 767px) {
+  .hud {
+    top: calc(var(--header-height) + 0.75rem);
+  }
+  .value {
+    font-size: 1.5rem;
+  }
+  .steps {
+    display: none;
+  }
+}

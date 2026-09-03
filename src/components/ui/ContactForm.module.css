@@ -1,0 +1,38 @@
+.form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1.25rem;
+}
+
+.honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.micro {
+  font-size: 0.8rem;
+  color: var(--color-mist);
+}
+
+.status:empty {
+  display: none;
+}
+
+.compact {
+  gap: 1rem;
+}

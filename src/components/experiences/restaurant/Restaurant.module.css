@@ -1,0 +1,142 @@
+.hero {
+  --scene-bg: #0a0705;
+}
+
+.amp {
+  color: var(--scene-accent);
+  font-style: italic;
+}
+
+.story {
+  background: #0d0906;
+}
+
+.menu {
+  background: #f3e9dc;
+  color: #14100c;
+}
+
+.menu .eyebrow,
+.menu h2 {
+  color: #14100c;
+}
+
+.menuGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2rem, 5vw, 5rem);
+  margin-top: 2.5rem;
+}
+
+.menuTitle {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  color: var(--scene-accent);
+  border-bottom: 1px solid rgba(20, 16, 12, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+.menuList {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+.menuItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid rgba(20, 16, 12, 0.12);
+}
+
+.dish {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  color: #14100c;
+}
+
+.detail {
+  display: block;
+  font-size: 0.9rem;
+  color: rgba(20, 16, 12, 0.65);
+}
+
+.price {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: #14100c;
+  white-space: nowrap;
+}
+
+.menu .demoNote,
+.menu p {
+  color: rgba(20, 16, 12, 0.6);
+  margin-top: 2rem;
+  font-size: 0.85rem;
+}
+
+.room {
+  background: #0d0906;
+  border-top: 1px solid var(--color-line);
+}
+
+.hours {
+  margin: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.hours div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid var(--color-line);
+  padding-bottom: 0.5rem;
+}
+
+.hours dt {
+  color: var(--color-mist);
+}
+
+.hours dd {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+}
+
+.reservation {
+  background: #0a0705;
+  border-top: 1px solid var(--color-line);
+}
+
+.map {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  outline: 1px solid var(--color-line);
+}
+
+.map svg {
+  width: 100%;
+  height: auto;
+}
+
+.mapLabel {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--color-ivory-70);
+  background: rgba(10, 7, 5, 0.75);
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+}
+
+@media (max-width: 767px) {
+  .menuGrid {
+    grid-template-columns: 1fr;
+  }
+}

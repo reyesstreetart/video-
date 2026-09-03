@@ -1,0 +1,126 @@
+.hero {
+  --scene-bg: #050607;
+}
+
+.counters {
+  padding-block: 2rem 3rem;
+  background: #050607;
+}
+
+.counters .demoNote {
+  margin-top: 1rem;
+}
+
+.stills {
+  background: #050607;
+}
+
+.night {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  min-height: 70svh;
+  display: grid;
+  align-items: end;
+}
+
+.nightBg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.nightBg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.55;
+}
+
+.config {
+  background: #08090b;
+  border-top: 1px solid var(--color-line);
+}
+
+.configurator {
+  display: grid;
+  gap: 1rem;
+}
+
+.configStage {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  aspect-ratio: 16 / 10;
+  outline: 1px solid var(--color-line);
+  background: var(--car-color);
+}
+
+.configStage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: luminosity;
+  opacity: 0.9;
+}
+
+.tint {
+  position: absolute;
+  inset: 0;
+  background: var(--car-color);
+  mix-blend-mode: multiply;
+  opacity: 0.55;
+  transition: background 0.5s var(--ease-out);
+}
+
+.glow {
+  position: absolute;
+  left: 50%;
+  bottom: 18%;
+  width: 60%;
+  height: 12%;
+  transform: translateX(-50%);
+  background: radial-gradient(ellipse, var(--car-glow), transparent 70%);
+  filter: blur(14px);
+  transition: background 0.5s var(--ease-out);
+}
+
+.swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.swatch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 44px;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-line);
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-ivory-70);
+}
+
+.swatch[aria-checked="true"] {
+  border-color: var(--scene-accent);
+  color: var(--color-ivory);
+}
+
+.swatchDot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: var(--swatch);
+  border: 1px solid rgba(244, 240, 232, 0.3);
+}
+
+.form {
+  background: #050607;
+  border-top: 1px solid var(--color-line);
+}

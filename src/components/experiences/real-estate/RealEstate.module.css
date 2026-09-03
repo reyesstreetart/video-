@@ -1,0 +1,58 @@
+.hero {
+  --scene-bg: #05050a;
+}
+
+.facts {
+  padding-block: 2rem;
+  background: #06060c;
+}
+
+.gallery {
+  background: #06060c;
+}
+
+.amenities {
+  background: var(--color-ivory);
+  color: var(--color-night);
+}
+
+.amenities .eyebrow {
+  color: rgba(3, 8, 23, 0.55);
+}
+
+.amenities h2 {
+  color: var(--color-night);
+}
+
+.price {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+  color: var(--color-night);
+  line-height: 1;
+}
+
+.amenityList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+}
+
+.amenityList li {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid rgba(3, 8, 23, 0.14);
+  font-size: 1.05rem;
+}
+
+.form {
+  background: #06060c;
+  border-top: 1px solid var(--color-line);
+}
+
+@media (max-width: 599px) {
+  .amenityList {
+    grid-template-columns: 1fr;
+  }
+}

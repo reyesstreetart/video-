@@ -1,0 +1,38 @@
+.wrap {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-night);
+  aspect-ratio: 16 / 10;
+}
+
+.poster,
+.video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 1.2s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.video {
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.wrap[data-playing="true"] .video {
+  opacity: 1;
+}
+
+@media (max-width: 640px) {
+  .wrap {
+    aspect-ratio: 4 / 5;
+  }
+}

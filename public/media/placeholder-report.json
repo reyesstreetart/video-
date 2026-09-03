@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-09-03T21:31:53.072Z",
+  "version": "v1",
+  "report": [
+    {
+      "slug": "automotive",
+      "frames": 60,
+      "seqDesktop": 359676,
+      "seqMobile": 245026,
+      "poster": 6970,
+      "posterMobile": 4000,
+      "preview": 148809
+    }
+  ]
+}

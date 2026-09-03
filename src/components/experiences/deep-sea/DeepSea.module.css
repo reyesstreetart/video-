@@ -1,0 +1,92 @@
+.hero {
+  --scene-bg: #020714;
+}
+
+.calloutLights {
+  right: var(--gutter);
+  top: 42%;
+  grid-column: auto;
+}
+
+.calloutHull {
+  right: var(--gutter);
+  top: 36%;
+  grid-column: auto;
+}
+
+.finalOverlay {
+  grid-column: 1 / span 8;
+  display: grid;
+  gap: 1rem;
+  justify-items: start;
+  align-self: end;
+}
+
+.zones {
+  background: linear-gradient(180deg, #020714, var(--color-night));
+}
+
+.zoneList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+
+.zoneItem {
+  display: grid;
+  grid-template-columns: 6rem 1fr;
+  gap: 1rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--color-line);
+  color: var(--color-ivory-70);
+}
+
+.zoneItem:last-child {
+  border-bottom: 1px solid var(--color-line);
+}
+
+.zoneItem h3 {
+  color: var(--color-ivory);
+  margin-bottom: 0.3rem;
+}
+
+.zoneDepth {
+  font-family: var(--font-serif);
+  color: var(--scene-accent);
+  font-size: 1.2rem;
+}
+
+.erebus {
+  border-top: 1px solid var(--color-line);
+}
+
+.erebusFigure {
+  grid-row: 1;
+}
+
+.erebusText {
+  grid-row: 1;
+}
+
+.manifest {
+  border-top: 1px solid var(--color-line);
+}
+
+.back {
+  margin-top: 3rem;
+}
+
+@media (max-width: 899px) {
+  .calloutLights,
+  .calloutHull {
+    display: none;
+  }
+  .erebusFigure,
+  .erebusText {
+    grid-row: auto;
+  }
+  .finalOverlay {
+    grid-column: 1 / -1;
+  }
+}

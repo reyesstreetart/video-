@@ -1,0 +1,22 @@
+.cta {
+  overflow: hidden;
+  border-top: 1px solid var(--color-line);
+}
+
+.inner {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 52rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.micro {
+  font-size: 0.8rem;
+  color: var(--color-mist);
+  letter-spacing: 0.06em;
+}
