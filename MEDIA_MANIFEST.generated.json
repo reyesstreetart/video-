@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-09-03T22:21:07.995Z",
+  "generatedAt": "2026-09-03T22:22:26.074Z",
   "version": "v2",
   "reports": [
     {
-      "slug": "restaurant",
+      "slug": "personal-portfolio",
       "version": "v2",
       "frames": 72,
-      "hero": 5395832,
-      "heroMobile": 3205340,
-      "preview": 247226,
-      "heroMp4": 633465,
+      "hero": 885522,
+      "heroMobile": 927238,
+      "preview": 149876,
+      "heroMp4": 603693,
       "stills": [
-        "fire",
-        "room",
-        "craft"
+        "orbit",
+        "builder",
+        "closer"
       ]
     }
   ]

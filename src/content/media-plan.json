@@ -33,13 +33,13 @@
       "folder": "02-personal-portfolio",
       "hero": {
         "id": "orbit",
-        "frames": 48,
+        "frames": 72,
         "scrollHeight": 320,
         "focal": {
           "x": 0.5,
           "y": 0.45
         },
-        "status": "placeholder"
+        "status": "generated"
       },
       "stills": [
         "orbit",
