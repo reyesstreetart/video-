@@ -50,7 +50,9 @@
     "restaurant": {
       "poster": "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_215459_56fa84b5-d6c3-4fe4-a867-46391381349a.png",
       "hero": {
-        "clips": [],
+        "clips": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_221504_3447a6c0-1fe5-4090-858e-2ead83e879bf.mp4"
+        ],
         "frames": 72
       },
       "stills": {
