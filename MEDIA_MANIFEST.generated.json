@@ -1,19 +1,23 @@
 {
-  "generatedAt": "2026-09-03T22:30:13.788Z",
+  "generatedAt": "2026-09-03T22:37:42.894Z",
   "version": "v2",
   "reports": [
     {
-      "slug": "fitness",
+      "slug": "personal-portfolio",
       "version": "v2",
       "frames": 72,
-      "hero": 3518770,
-      "heroMobile": 2527160,
-      "preview": 384027,
-      "heroMp4": 869721,
+      "hero": 885522,
+      "heroMobile": 588312,
+      "preview": 149876,
+      "heroMp4": 603693,
+      "scenes": [
+        "builder",
+        "closer"
+      ],
       "stills": [
-        "chalk",
-        "iron",
-        "grind"
+        "orbit",
+        "builder",
+        "closer"
       ]
     }
   ]

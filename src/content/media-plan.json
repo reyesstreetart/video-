@@ -45,7 +45,19 @@
         "orbit",
         "builder",
         "closer"
-      ]
+      ],
+      "scenes": {
+        "builder": {
+          "frames": 48,
+          "status": "generated",
+          "scrollHeight": 300
+        },
+        "closer": {
+          "frames": 48,
+          "status": "generated",
+          "scrollHeight": 260
+        }
+      }
     },
     "luxury-product": {
       "folder": "03-luxury-product",
