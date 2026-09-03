@@ -1,12 +1,20 @@
 {
-  "generatedAt": "2026-09-03T22:04:40.879Z",
+  "generatedAt": "2026-09-03T22:16:01.372Z",
   "version": "v2",
   "reports": [
     {
-      "slug": "deep-sea-journey",
+      "slug": "real-estate",
       "version": "v2",
+      "frames": 120,
+      "hero": 5937424,
+      "heroMobile": 2772924,
+      "preview": 651968,
+      "heroMp4": 4985393,
       "stills": [
-        "surface"
+        "approach",
+        "arrival",
+        "flow",
+        "terrace"
       ]
     }
   ]

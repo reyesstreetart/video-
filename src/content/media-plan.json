@@ -1,5 +1,5 @@
 {
-  "version": "v1",
+  "version": "v2",
   "desktop": {
     "width": 1280,
     "height": 720
@@ -87,13 +87,13 @@
       "folder": "05-real-estate",
       "hero": {
         "id": "tour",
-        "frames": 60,
+        "frames": 120,
         "scrollHeight": 400,
         "focal": {
           "x": 0.5,
           "y": 0.5
         },
-        "status": "placeholder"
+        "status": "generated"
       },
       "stills": [
         "approach",
