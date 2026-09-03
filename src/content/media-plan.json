@@ -106,13 +106,13 @@
       "folder": "06-automotive",
       "hero": {
         "id": "drive",
-        "frames": 60,
+        "frames": 120,
         "scrollHeight": 400,
         "focal": {
           "x": 0.5,
           "y": 0.55
         },
-        "status": "placeholder"
+        "status": "generated"
       },
       "stills": [
         "reveal",

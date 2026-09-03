@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-03T22:16:01.372Z",
+  "generatedAt": "2026-09-03T22:19:53.713Z",
   "version": "v2",
   "reports": [
     {
-      "slug": "real-estate",
+      "slug": "automotive",
       "version": "v2",
       "frames": 120,
-      "hero": 5937424,
-      "heroMobile": 2772924,
-      "preview": 651968,
-      "heroMp4": 4985393,
+      "hero": 5674598,
+      "heroMobile": 2756404,
+      "preview": 155323,
+      "heroMp4": 4951019,
       "stills": [
-        "approach",
-        "arrival",
-        "flow",
-        "terrace"
+        "reveal",
+        "run",
+        "canyon",
+        "night"
       ]
     }
   ]
