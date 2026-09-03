@@ -143,13 +143,13 @@
       "folder": "08-fitness",
       "hero": {
         "id": "chalk",
-        "frames": 36,
+        "frames": 72,
         "scrollHeight": 300,
         "focal": {
           "x": 0.5,
           "y": 0.45
         },
-        "status": "placeholder"
+        "status": "generated"
       },
       "stills": [
         "chalk",

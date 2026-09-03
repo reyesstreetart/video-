@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-09-03T22:28:47.071Z",
+  "generatedAt": "2026-09-03T22:30:13.788Z",
   "version": "v2",
   "reports": [
     {
-      "slug": "saas",
+      "slug": "fitness",
       "version": "v2",
       "frames": 72,
-      "hero": 2755508,
-      "heroMobile": 1787652,
-      "preview": 747879,
-      "heroMp4": 1411150,
+      "hero": 3518770,
+      "heroMobile": 2527160,
+      "preview": 384027,
+      "heroMp4": 869721,
       "stills": [
-        "particles",
-        "signal",
-        "calm"
+        "chalk",
+        "iron",
+        "grind"
       ]
     }
   ]
