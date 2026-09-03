@@ -75,7 +75,19 @@
         "orbit",
         "macro",
         "exploded"
-      ]
+      ],
+      "scenes": {
+        "macro": {
+          "frames": 48,
+          "status": "generated",
+          "scrollHeight": 280
+        },
+        "exploded": {
+          "frames": 48,
+          "status": "generated",
+          "scrollHeight": 340
+        }
+      }
     },
     "restaurant": {
       "folder": "04-restaurant",

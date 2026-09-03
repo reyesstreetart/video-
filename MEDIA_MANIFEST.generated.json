@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-09-03T22:37:42.894Z",
+  "generatedAt": "2026-09-03T22:41:50.976Z",
   "version": "v2",
   "reports": [
     {
-      "slug": "personal-portfolio",
+      "slug": "luxury-product",
       "version": "v2",
       "frames": 72,
-      "hero": 885522,
-      "heroMobile": 588312,
-      "preview": 149876,
-      "heroMp4": 603693,
+      "hero": 1430382,
+      "heroMobile": 1248618,
+      "preview": 341014,
+      "heroMp4": 643206,
       "scenes": [
-        "builder",
-        "closer"
+        "macro",
+        "exploded"
       ],
       "stills": [
         "orbit",
-        "builder",
-        "closer"
+        "macro",
+        "exploded"
       ]
     }
   ]
