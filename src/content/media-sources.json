@@ -72,7 +72,12 @@
     "automotive": {
       "poster": "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_215818_3f0cb771-bf6e-4311-9f70-7d2681913cc2.png",
       "hero": {
-        "clips": [],
+        "clips": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_220525_5da04d9f-fa04-4116-844d-28de26d9cf93.mp4",
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_220525_f0a6b85f-8f69-4447-9227-01a4db9b4459.mp4",
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_220524_4abc3511-1edb-4e5d-82da-e16954ec6ea0.mp4",
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_221059_e620bc95-2990-41c7-82f0-db32f50fd332.mp4"
+        ],
         "frames": 120
       },
       "stills": {
