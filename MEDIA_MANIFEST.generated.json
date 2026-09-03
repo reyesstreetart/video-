@@ -1,21 +1,19 @@
 {
-  "generatedAt": "2026-09-03T22:24:53.441Z",
+  "generatedAt": "2026-09-03T22:26:14.342Z",
   "version": "v2",
   "reports": [
     {
-      "slug": "deep-sea-journey",
+      "slug": "luxury-product",
       "version": "v2",
-      "frames": 120,
-      "hero": 2962930,
-      "heroMobile": 1787278,
-      "preview": 172120,
-      "heroMp4": 3586398,
+      "frames": 72,
+      "hero": 1430382,
+      "heroMobile": 1617448,
+      "preview": 341014,
+      "heroMp4": 643206,
       "stills": [
-        "surface",
-        "sunlit",
-        "twilight",
-        "midnight",
-        "floor"
+        "orbit",
+        "macro",
+        "exploded"
       ]
     }
   ]

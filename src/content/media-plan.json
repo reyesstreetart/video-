@@ -51,13 +51,13 @@
       "folder": "03-luxury-product",
       "hero": {
         "id": "orbit",
-        "frames": 48,
+        "frames": 72,
         "scrollHeight": 340,
         "focal": {
           "x": 0.5,
           "y": 0.5
         },
-        "status": "placeholder"
+        "status": "generated"
       },
       "stills": [
         "orbit",
