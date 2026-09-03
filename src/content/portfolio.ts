@@ -7,7 +7,7 @@ export const portfolioContent = {
   persona: {
     name: "Alex Rivière",
     isFictional: true,
-    role: "Directeur artistique indépendant · personnage fictif de démonstration",
+    role: "Direction artistique indépendante · personnage fictif de démonstration",
     activity: "Je conçois des identités et des expériences digitales pour des marques qui veulent être reconnues avant d’être lues.",
     location: "Paris · Lisbonne",
   },

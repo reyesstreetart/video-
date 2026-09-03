@@ -97,6 +97,18 @@
         "fire": "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_215459_56fa84b5-d6c3-4fe4-a867-46391381349a.png",
         "room": "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_220304_20c4805a-1c38-4981-b9ef-2868bac92ad2.png",
         "craft": "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_220304_71aae097-e883-480f-84a8-687b351c0746.png"
+      },
+      "scenes": {
+        "room": {
+          "clip": "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_223338_634fa95e-4ad5-40f2-8987-9e7234bd7173.mp4",
+          "frames": 48,
+          "scrollHeight": 260
+        },
+        "craft": {
+          "clip": "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_223338_73b01980-5281-4aa6-a4e8-048d18b35c8c.mp4",
+          "frames": 48,
+          "scrollHeight": 260
+        }
       }
     },
     "real-estate": {
@@ -156,6 +168,13 @@
         "particles": "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_215459_7fc24c6f-69a3-498d-9fea-2dd2f91112a8.png",
         "signal": "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_220304_fdbb76cc-87ba-41d3-bd56-4dce0f3c98b0.png",
         "calm": "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_220304_129fe388-d964-48a5-bdeb-a3d59d498edb.png"
+      },
+      "scenes": {
+        "signal": {
+          "clip": "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_223420_3acaa6ef-aa99-4a68-9477-045ceadffc09.mp4",
+          "frames": 48,
+          "scrollHeight": 260
+        }
       }
     },
     "fitness": {
