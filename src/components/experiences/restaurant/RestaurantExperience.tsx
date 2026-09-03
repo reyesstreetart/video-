@@ -7,7 +7,7 @@ import { ScrollChapter } from "@/components/motion/ScrollChapter";
 import { SequenceCanvas } from "@/components/motion/SequenceCanvas";
 import { SceneOverlay, OverlayItem } from "@/components/motion/SceneOverlay";
 import { ProgressHUD } from "@/components/motion/ProgressHUD";
-import { ScrubPoster } from "@/components/motion/ScrubPoster";
+import { SceneLayer } from "@/components/motion/SceneLayer";
 import { Reveal } from "@/components/motion/Reveal";
 import { ContactForm } from "@/components/ui/ContactForm";
 import { FictionalNotice } from "@/components/ui/FictionalNotice";
@@ -125,7 +125,7 @@ export function RestaurantExperience() {
       </section>
 
       <ScrollChapter height={260} label="Repas privé" id="table-du-chef" className={shared.hero}>
-        <ScrubPoster poster={media.stills.craft ?? media.hero.poster} range={[0, 1]} scale={[1.05, 1.18]} pan={[0, -2]} fade={0.06} />
+        <SceneLayer media={media.scenes.craft} fallbackPoster={media.stills.craft ?? media.hero.poster} scale={[1.05, 1.18]} pan={[0, -2]} />
         <div className={shared.sceneShade} aria-hidden="true" />
         <SceneOverlay>
           <OverlayItem from={0} to={0.5} fade={0.3} className={shared.chapterLabel}>

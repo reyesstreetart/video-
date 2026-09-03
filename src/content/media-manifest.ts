@@ -64,6 +64,8 @@ export interface ExperienceMedia {
   preview: PreviewMedia;
   hero: SceneMedia;
   stills: Record<string, PosterSource>;
+  /** Scènes secondaires scrubées (macro, builder, craft…) : séquence si générée, sinon poster seul. */
+  scenes: Record<string, SceneMedia>;
 }
 
 type PlanExperience = (typeof plan.experiences)[keyof typeof plan.experiences];
@@ -80,6 +82,28 @@ function buildExperienceMedia(slug: ExperienceSlug, p: PlanExperience): Experien
   const stills: Record<string, PosterSource> = {};
   for (const id of p.stills) {
     stills[id] = { desktop: `${base}/stills/${id}.webp`, mobile: `${base}/stills/${id}-mobile.webp` };
+  }
+  const scenes: Record<string, SceneMedia> = {};
+  const planScenes = (p as { scenes?: Record<string, { frames: number; status: string; scrollHeight?: number }> }).scenes ?? {};
+  for (const [id, sc] of Object.entries(planScenes)) {
+    const poster = stills[id] ?? { desktop: `${base}/stills/${id}.webp`, mobile: `${base}/stills/${id}-mobile.webp` };
+    const generated = sc.status === "generated";
+    scenes[id] = {
+      id: `${slug}:${id}`,
+      status: sc.status as MediaStatus,
+      version,
+      poster,
+      ...(generated
+        ? {
+            sequence: {
+              desktop: { dir: `${base}/seq/${version}/${id}/desktop`, frameCount: sc.frames, width: plan.desktop.width, height: plan.desktop.height, extension: "webp" as const },
+              mobile: { dir: `${base}/seq/${version}/${id}/mobile`, frameCount: sc.frames, width: plan.mobile.width, height: plan.mobile.height, extension: "webp" as const },
+            },
+          }
+        : {}),
+      focal: { x: 0.5, y: 0.5 },
+      scrollHeight: sc.scrollHeight ?? 260,
+    };
   }
   const poster: PosterSource = { desktop: `${base}/poster.webp`, mobile: `${base}/poster-mobile.webp` };
   return {
@@ -116,6 +140,7 @@ function buildExperienceMedia(slug: ExperienceSlug, p: PlanExperience): Experien
       scrollHeight: p.hero.scrollHeight,
     },
     stills,
+    scenes,
   };
 }
 

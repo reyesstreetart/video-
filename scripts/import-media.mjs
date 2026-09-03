@@ -9,7 +9,8 @@
  *     "<slug>": {
  *       "hero": { "clips": ["https://…mp4", …], "mobileClips": ["https://…mp4"], "frames": 96 },
  *       "poster": "https://…png"            (optionnel : sinon première frame du hero)
- *       "stills": { "<id>": "https://…png" }
+ *       "stills": { "<id>": "https://…png" },
+ *       "scenes": { "<id>": { "clip": "https://…mp4", "frames": 48, "scrollHeight": 260 } }
  *     }
  *   }
  * }
@@ -135,6 +136,26 @@ async function importExperience(slug, src) {
     report.heroMobile = dirSize(join(base, "seq", version, "mobile"));
     report.preview = statSync(join(base, "preview.webm")).size;
     report.heroMp4 = statSync(join(base, "hero.mp4")).size;
+  }
+
+  // --- Scènes secondaires (macro, builder, craft…) : séquence courte desktop + mobile ---
+  if (src.scenes) {
+    p.scenes = p.scenes ?? {};
+    for (const [id, sc] of Object.entries(src.scenes)) {
+      const master = concatClips([sc.clip], `${slug}-scene-${id}`);
+      const target = sc.frames ?? 48;
+      const n = await extractFrames(master, join(base, "seq", version, id, "desktop"), target, D.width, D.height, 70);
+      const m = await extractFrames(master, join(base, "seq", version, id, "mobile"), n, M.width, M.height, 64);
+      if (m !== n) throw new Error(`frames mobile (${m}) ≠ desktop (${n}) pour ${slug}:${id}`);
+      p.scenes[id] = { frames: n, status: "generated", scrollHeight: sc.scrollHeight ?? 260 };
+      if (!p.stills.includes(id)) p.stills.push(id);
+      if (!src.stills?.[id]) {
+        mkdirSync(join(base, "stills"), { recursive: true });
+        await sharp(join(base, "seq", version, id, "desktop", "000.webp")).webp({ quality: 78 }).toFile(join(base, "stills", `${id}.webp`));
+        await sharp(join(base, "seq", version, id, "mobile", "000.webp")).webp({ quality: 72 }).toFile(join(base, "stills", `${id}-mobile.webp`));
+      }
+    }
+    report.scenes = Object.keys(src.scenes);
   }
 
   // --- Stills ---

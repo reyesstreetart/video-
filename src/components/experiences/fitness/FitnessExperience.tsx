@@ -7,7 +7,7 @@ import { ScrollChapter } from "@/components/motion/ScrollChapter";
 import { SequenceCanvas } from "@/components/motion/SequenceCanvas";
 import { SceneOverlay, OverlayItem } from "@/components/motion/SceneOverlay";
 import { ProgressHUD } from "@/components/motion/ProgressHUD";
-import { ScrubPoster } from "@/components/motion/ScrubPoster";
+import { SceneLayer } from "@/components/motion/SceneLayer";
 import { Reveal } from "@/components/motion/Reveal";
 import { ContactForm } from "@/components/ui/ContactForm";
 import { FictionalNotice } from "@/components/ui/FictionalNotice";
@@ -77,7 +77,7 @@ export function FitnessExperience() {
       </section>
 
       <ScrollChapter height={240} label="The Iron" id="iron" className={shared.hero}>
-        <ScrubPoster poster={media.stills.iron ?? media.hero.poster} range={[0, 1]} scale={[1.05, 1.2]} pan={[3, -3]} fade={0.06} />
+        <SceneLayer media={media.scenes.iron} fallbackPoster={media.stills.iron ?? media.hero.poster} scale={[1.05, 1.2]} pan={[3, -3]} />
         <div className={shared.sceneShade} aria-hidden="true" />
         <SceneOverlay>
           <OverlayItem from={0.05} to={0.95} fade={0.25} className={shared.chapterLabel}>

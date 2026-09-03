@@ -7,7 +7,7 @@ import { ScrollChapter, useChapter } from "@/components/motion/ScrollChapter";
 import { SequenceCanvas } from "@/components/motion/SequenceCanvas";
 import { SceneOverlay, OverlayItem } from "@/components/motion/SceneOverlay";
 import { ProgressHUD } from "@/components/motion/ProgressHUD";
-import { ScrubPoster } from "@/components/motion/ScrubPoster";
+import { SceneLayer } from "@/components/motion/SceneLayer";
 import { Reveal } from "@/components/motion/Reveal";
 import { ContactForm } from "@/components/ui/ContactForm";
 import { FictionalNotice } from "@/components/ui/FictionalNotice";
@@ -116,7 +116,7 @@ export function LuxuryProductExperience() {
       </section>
 
       <ScrollChapter height={280} label="Macro sur le cadran" id="macro" className={shared.hero}>
-        <ScrubPoster poster={media.stills.macro ?? media.hero.poster} range={[0, 1]} scale={[1.05, 1.4]} pan={[-2, 2]} fade={0.06} />
+        <SceneLayer media={media.scenes.macro} fallbackPoster={media.stills.macro ?? media.hero.poster} scale={[1.05, 1.4]} pan={[-2, 2]} />
         <div className={shared.sceneShade} aria-hidden="true" />
         <SceneOverlay>
           <OverlayItem from={0} to={0.4} fade={0.3} className={shared.chapterLabel}>

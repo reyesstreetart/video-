@@ -9,7 +9,7 @@ import { ScrollChapter, useChapter } from "@/components/motion/ScrollChapter";
 import { SequenceCanvas } from "@/components/motion/SequenceCanvas";
 import { SceneOverlay, OverlayItem } from "@/components/motion/SceneOverlay";
 import { ProgressHUD } from "@/components/motion/ProgressHUD";
-import { ScrubPoster } from "@/components/motion/ScrubPoster";
+import { SceneLayer } from "@/components/motion/SceneLayer";
 import { Reveal } from "@/components/motion/Reveal";
 import { FictionalNotice } from "@/components/ui/FictionalNotice";
 import { FICTIONAL_LABEL } from "@/content/experiences";
@@ -110,7 +110,7 @@ export function PortfolioExperience() {
       ) : null}
 
       <ScrollChapter height={300} label="Les trois piliers" id="piliers" className={shared.hero}>
-        <ScrubPoster poster={media.stills.builder ?? media.hero.poster} range={[0, 1]} scale={[1.06, 1.16]} pan={[1.5, -1.5]} fade={0.06} />
+        <SceneLayer media={media.scenes.builder} fallbackPoster={media.stills.builder ?? media.hero.poster} scale={[1.06, 1.16]} pan={[1.5, -1.5]} />
         <div className={shared.sceneShade} aria-hidden="true" />
         <SceneOverlay>
           <OverlayItem from={0} to={0.22} fade={0.35} className={shared.chapterLabel}>
