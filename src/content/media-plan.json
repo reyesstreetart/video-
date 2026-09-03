@@ -105,7 +105,19 @@
         "fire",
         "room",
         "craft"
-      ]
+      ],
+      "scenes": {
+        "room": {
+          "frames": 48,
+          "status": "generated",
+          "scrollHeight": 260
+        },
+        "craft": {
+          "frames": 48,
+          "status": "generated",
+          "scrollHeight": 260
+        }
+      }
     },
     "real-estate": {
       "folder": "05-real-estate",
@@ -161,7 +173,19 @@
         "particles",
         "signal",
         "calm"
-      ]
+      ],
+      "scenes": {
+        "signal": {
+          "frames": 48,
+          "status": "generated",
+          "scrollHeight": 260
+        },
+        "calm": {
+          "frames": 48,
+          "status": "generated",
+          "scrollHeight": 260
+        }
+      }
     },
     "fitness": {
       "folder": "08-fitness",
@@ -179,7 +203,19 @@
         "chalk",
         "iron",
         "grind"
-      ]
+      ],
+      "scenes": {
+        "iron": {
+          "frames": 48,
+          "status": "generated",
+          "scrollHeight": 240
+        },
+        "grind": {
+          "frames": 48,
+          "status": "generated",
+          "scrollHeight": 240
+        }
+      }
     }
   }
 }

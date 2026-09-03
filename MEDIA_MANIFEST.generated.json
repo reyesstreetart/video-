@@ -1,7 +1,41 @@
 {
-  "generatedAt": "2026-09-03T22:41:50.976Z",
+  "generatedAt": "2026-09-03T22:51:14.769Z",
   "version": "v2",
   "reports": [
+    {
+      "slug": "deep-sea-journey",
+      "version": "v2",
+      "frames": 120,
+      "hero": 2963216,
+      "heroMobile": 1749464,
+      "preview": 172120,
+      "heroMp4": 3576222,
+      "stills": [
+        "surface",
+        "sunlit",
+        "twilight",
+        "midnight",
+        "floor"
+      ]
+    },
+    {
+      "slug": "personal-portfolio",
+      "version": "v2",
+      "frames": 72,
+      "hero": 885522,
+      "heroMobile": 588312,
+      "preview": 149876,
+      "heroMp4": 603693,
+      "scenes": [
+        "builder",
+        "closer"
+      ],
+      "stills": [
+        "orbit",
+        "builder",
+        "closer"
+      ]
+    },
     {
       "slug": "luxury-product",
       "version": "v2",
@@ -18,6 +52,90 @@
         "orbit",
         "macro",
         "exploded"
+      ]
+    },
+    {
+      "slug": "restaurant",
+      "version": "v2",
+      "frames": 72,
+      "hero": 5395832,
+      "heroMobile": 2523572,
+      "preview": 247226,
+      "heroMp4": 633458,
+      "scenes": [
+        "room",
+        "craft"
+      ],
+      "stills": [
+        "fire",
+        "room",
+        "craft"
+      ]
+    },
+    {
+      "slug": "real-estate",
+      "version": "v2",
+      "frames": 120,
+      "hero": 5937424,
+      "heroMobile": 2578562,
+      "preview": 651968,
+      "heroMp4": 4985393,
+      "stills": [
+        "approach",
+        "arrival",
+        "flow",
+        "terrace"
+      ]
+    },
+    {
+      "slug": "automotive",
+      "version": "v2",
+      "frames": 120,
+      "hero": 5674598,
+      "heroMobile": 1639288,
+      "preview": 155323,
+      "heroMp4": 4951019,
+      "stills": [
+        "reveal",
+        "run",
+        "canyon",
+        "night"
+      ]
+    },
+    {
+      "slug": "saas",
+      "version": "v2",
+      "frames": 72,
+      "hero": 2755508,
+      "heroMobile": 1773578,
+      "preview": 747879,
+      "heroMp4": 1411150,
+      "scenes": [
+        "signal",
+        "calm"
+      ],
+      "stills": [
+        "particles",
+        "signal",
+        "calm"
+      ]
+    },
+    {
+      "slug": "fitness",
+      "version": "v2",
+      "frames": 72,
+      "hero": 3518770,
+      "heroMobile": 1576034,
+      "preview": 384027,
+      "heroMp4": 869721,
+      "scenes": [
+        "iron",
+        "grind"
+      ],
+      "stills": [
+        "chalk",
+        "iron",
+        "grind"
       ]
     }
   ]
