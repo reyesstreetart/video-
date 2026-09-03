@@ -1,0 +1,45 @@
+name: Import Higgsfield media
+
+# Télécharge les médias générés (Higgsfield / Seedance), produit posters, séquences, previews
+# et fallbacks vidéo, puis commite le résultat sur la branche. Aucune génération n'a lieu ici :
+# les sources sont listées dans src/content/media-sources.json.
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Slug d'expérience à importer (vide = toutes)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: import-media-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: ffmpeg -version | head -1
+      - name: Import et conversion
+        run: node scripts/import-media.mjs ${{ github.event.inputs.only && format('--only={0}', github.event.inputs.only) || '' }}
+      - name: Commit
+        run: |
+          git config user.name "mv-design-media-bot"
+          git config user.email "media-bot@users.noreply.github.com"
+          git add -A public/media src/content/media-plan.json MEDIA_MANIFEST.generated.json
+          if git diff --cached --quiet; then echo "Aucun changement"; exit 0; fi
+          git commit -m "media: import des médias Higgsfield (${{ github.run_id }})"
+          git pull --rebase origin ${{ github.ref_name }}
+          git push origin HEAD:${{ github.ref_name }}
