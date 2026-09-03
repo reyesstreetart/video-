@@ -13,13 +13,13 @@
       "folder": "01-deep-sea",
       "hero": {
         "id": "descent",
-        "frames": 72,
+        "frames": 120,
         "scrollHeight": 420,
         "focal": {
           "x": 0.5,
           "y": 0.5
         },
-        "status": "placeholder"
+        "status": "generated"
       },
       "stills": [
         "surface",

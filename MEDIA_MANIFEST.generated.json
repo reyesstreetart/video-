@@ -1,19 +1,21 @@
 {
-  "generatedAt": "2026-09-03T22:22:26.074Z",
+  "generatedAt": "2026-09-03T22:24:53.441Z",
   "version": "v2",
   "reports": [
     {
-      "slug": "personal-portfolio",
+      "slug": "deep-sea-journey",
       "version": "v2",
-      "frames": 72,
-      "hero": 885522,
-      "heroMobile": 927238,
-      "preview": 149876,
-      "heroMp4": 603693,
+      "frames": 120,
+      "hero": 2962930,
+      "heroMobile": 1787278,
+      "preview": 172120,
+      "heroMp4": 3586398,
       "stills": [
-        "orbit",
-        "builder",
-        "closer"
+        "surface",
+        "sunlit",
+        "twilight",
+        "midnight",
+        "floor"
       ]
     }
   ]
