@@ -174,6 +174,11 @@
           "clip": "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_223420_3acaa6ef-aa99-4a68-9477-045ceadffc09.mp4",
           "frames": 48,
           "scrollHeight": 260
+        },
+        "calm": {
+          "clip": "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_223524_73d8e605-4f91-45d0-9c2d-8ca4c048a70b.mp4",
+          "frames": 48,
+          "scrollHeight": 260
         }
       }
     },
@@ -192,6 +197,18 @@
         "chalk": "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_215459_07b03321-a848-4a2a-877e-d2c1a39b9814.png",
         "iron": "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_220304_1a64afdd-a21d-445d-b0ae-003e9913ac06.png",
         "grind": "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_220304_391462fe-9edb-4699-95d2-40618a4b4144.png"
+      },
+      "scenes": {
+        "iron": {
+          "clip": "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_223712_7c3b57d4-690c-4f91-8076-f9322f218625.mp4",
+          "frames": 48,
+          "scrollHeight": 240
+        },
+        "grind": {
+          "clip": "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_223752_9ee837b1-6561-4afe-8786-46f5528eeec4.mp4",
+          "frames": 48,
+          "scrollHeight": 240
+        }
       }
     }
   }
