@@ -102,7 +102,9 @@
     "saas": {
       "poster": "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_215459_7fc24c6f-69a3-498d-9fea-2dd2f91112a8.png",
       "hero": {
-        "clips": [],
+        "clips": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_221803_bdd65178-bb51-4a6f-aed8-b1175ed59927.mp4"
+        ],
         "frames": 72
       },
       "stills": {
@@ -114,7 +116,9 @@
     "fitness": {
       "poster": "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_215459_07b03321-a848-4a2a-877e-d2c1a39b9814.png",
       "hero": {
-        "clips": [],
+        "clips": [
+          "https://d8j0ntlcm91z4.cloudfront.net/user_38kvrHCm3jSQsRFngJxbmiPwPTo/hf_20260903_221802_057f61da-15e7-4850-b395-5cf332909a63.mp4"
+        ],
         "frames": 72
       },
       "stills": {
