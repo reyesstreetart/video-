@@ -1,9 +1,14 @@
-# MEDIA_NEEDED — médias à produire (Higgsfield / Seedance 2.0)
+# MEDIA_NEEDED — cahier de production des médias (Higgsfield / Seedance 2.0)
 
-Le MCP Higgsfield n'était pas disponible dans l'environnement de développement. Le site fonctionne
-intégralement avec des **médias de substitution procéduraux** (compositions SVG rendues en WebP,
-générées par `npm run media:placeholders`). Ce document liste tout ce qui doit être produit pour
-remplacer ces placeholders, **sans modifier les composants**.
+> **Statut : produit.** Les 8 images maîtresses, 23 frames-clés et stills, et 36 clips Seedance 2.0
+> (8 héros desktop 16:9, 8 variantes mobiles 9:16, 20 plans chaînés et scènes secondaires) ont été générés
+> avec le MCP Higgsfield puis importés par `scripts/import-media.mjs` (workflow `import-media.yml`).
+> Les URL sources sont dans `src/content/media-sources.json`. Ce document reste la référence pour
+> régénérer ou remplacer un plan **sans modifier les composants**.
+
+Méthode de continuité utilisée : image maîtresse → frames-clés dérivées avec la maîtresse en
+`image_references` → clips générés avec `start_image` = frame-clé N et `end_image` = frame-clé N+1,
+ce qui garantit des raccords exacts entre plans chaînés.
 
 ## Règles communes
 

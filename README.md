@@ -98,15 +98,31 @@ Le mode est fixé avant l'hydratation par un script inline (`data-motion` sur `<
 
 ## Médias
 
-Le MCP Higgsfield n'était pas disponible : le site est livré avec des **médias de substitution
-procéduraux** (SVG → WebP, previews WebM), générés par :
+Les films des huit univers ont été produits avec **Higgsfield (Seedance 2.0, mode standard, 1080p, sans audio)**
+à partir d'images maîtresses (Nano Banana Pro) réutilisées comme référence sur chaque plan, et de frames-clés
+partagées entre clips chaînés (start frame / end frame). Ils sont ensuite importés et convertis par le workflow
+GitHub Actions `import-media.yml` :
 
 ```bash
-npm run media:placeholders            # toutes les expériences
-node scripts/generate-placeholder-media.mjs --only=automotive --no-video
+# Sources (URL des générations) : src/content/media-sources.json
+# Import local (ffmpeg + sharp requis) :
+node scripts/import-media.mjs                  # toutes les expériences
+node scripts/import-media.mjs --only=automotive
+# Import distant : Actions → « Import Higgsfield media » → Run workflow (le résultat est commité sur la branche)
 ```
 
-- `MEDIA_NEEDED.md` : prompts, formats, chemins et contraintes des films à produire avec Seedance 2.0.
+L'import produit, pour chaque expérience : `poster*.webp`, `preview.webm/mp4`, `hero.mp4`, `hero-mobile.mp4`,
+les séquences `seq/<version>/desktop|mobile/NNN.webp`, les séquences des scènes secondaires
+`seq/<version>/<scène>/…` et les `stills/`, puis met à jour `src/content/media-plan.json`
+(frames, statut `generated`). Aucun appel à une API de génération n'existe dans le runtime du site.
+
+Le générateur de **médias de substitution** procéduraux reste disponible pour un environnement sans médias :
+
+```bash
+npm run media:placeholders
+```
+
+- `MEDIA_NEEDED.md` : prompts, formats, chemins et contraintes des films (historique de production).
 - `MEDIA_MANIFEST.md` : statut, poids et chemins de chaque média.
 
 ### Remplacer un média sans toucher aux composants
