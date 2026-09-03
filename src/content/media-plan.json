@@ -69,13 +69,13 @@
       "folder": "04-restaurant",
       "hero": {
         "id": "fire",
-        "frames": 36,
+        "frames": 72,
         "scrollHeight": 280,
         "focal": {
           "x": 0.5,
           "y": 0.55
         },
-        "status": "placeholder"
+        "status": "generated"
       },
       "stills": [
         "fire",

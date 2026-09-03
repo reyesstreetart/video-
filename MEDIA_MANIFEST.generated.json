@@ -1,20 +1,19 @@
 {
-  "generatedAt": "2026-09-03T22:19:53.713Z",
+  "generatedAt": "2026-09-03T22:21:07.995Z",
   "version": "v2",
   "reports": [
     {
-      "slug": "automotive",
+      "slug": "restaurant",
       "version": "v2",
-      "frames": 120,
-      "hero": 5674598,
-      "heroMobile": 2756404,
-      "preview": 155323,
-      "heroMp4": 4951019,
+      "frames": 72,
+      "hero": 5395832,
+      "heroMobile": 3205340,
+      "preview": 247226,
+      "heroMp4": 633465,
       "stills": [
-        "reveal",
-        "run",
-        "canyon",
-        "night"
+        "fire",
+        "room",
+        "craft"
       ]
     }
   ]
