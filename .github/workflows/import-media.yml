@@ -31,7 +31,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci --no-audit --no-fund
-      - run: ffmpeg -version | head -1
+      - name: Installer ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null && ffmpeg -version | head -1
       - name: Import et conversion
         run: node scripts/import-media.mjs ${{ github.event.inputs.only && format('--only={0}', github.event.inputs.only) || '' }}
       - name: Commit
